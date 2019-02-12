@@ -14,6 +14,7 @@ public class AdminMenu extends javax.swing.JFrame {
      * Creates new form AdminMenu
      */
     public AdminMenu() {
+        // Agregar Variables
         initComponents();
     }
 
