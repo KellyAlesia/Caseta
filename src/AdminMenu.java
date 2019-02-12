@@ -8,12 +8,12 @@
  *
  * @author Kelly Sanchez
  */
-public class Bienvenida extends javax.swing.JFrame {
+public class AdminMenu extends javax.swing.JFrame {
 
     /**
-     * Creates new form Bienvenida
+     * Creates new form AdminMenu
      */
-    public Bienvenida() {
+    public AdminMenu() {
         initComponents();
     }
 
@@ -28,41 +28,42 @@ public class Bienvenida extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/admin.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/configuracion.png"))); // NOI18N
         getContentPane().add(jButton1);
-        jButton1.setBounds(180, 210, 150, 141);
+        jButton1.setBounds(160, 190, 150, 140);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/alum.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/control.png"))); // NOI18N
         getContentPane().add(jButton2);
-        jButton2.setBounds(420, 210, 140, 140);
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel2.setText("Alumno");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(450, 360, 90, 30);
+        jButton2.setBounds(450, 190, 140, 140);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel1.setText("Administrador");
+        jLabel1.setText("Configuraciones");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(190, 360, 150, 30);
+        jLabel1.setBounds(160, 340, 160, 30);
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        jLabel4.setText("Selecciona el tipo de usuario a ingresar:");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(190, 150, 410, 30);
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel2.setText("Control de prestaciones");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(410, 340, 240, 40);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 833, 414);
+        jLabel3.setBounds(0, 0, 760, 410);
+
+        jMenu1.setText("Cerrar sesión");
+        jMenu1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -84,20 +85,20 @@ public class Bienvenida extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bienvenida().setVisible(true);
+                new AdminMenu().setVisible(true);
             }
         });
     }
@@ -108,6 +109,7 @@ public class Bienvenida extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
